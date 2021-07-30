@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= titulo %>
+    </title>
+</head>
+
+<body>
+    <h1>
+        <%= titulo %>
+    </h1>
+
+    <form action="/tests/post" method="POST">
+        <label for="titulo">Titulo</label>
+        <input type="text" name="titulo" placeholder="titulo"><br>
+
+        <label for="fecha">Fecha</label>
+        <input type="datetime-local" name="fecha" placeholder="fecha"><br>
+
+        <input type="submit" value="Guardar">
+    </form>
+</body>
+
+</html>
